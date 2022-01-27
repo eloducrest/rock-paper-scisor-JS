@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+body {
+   font-family: 'Muli', Helvetica, Arial, sans-serif;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height:100vh;
+   overflow: hidden;
+   margin:0;
+}
+
+.content h2{
+  text-align: center;
+  color: #72EB15;
+  letter-spacing: 5px;
+  font: italic 60px 'Rubik Beastly', Serif;
+  text-shadow: -4px 3px 0 #E716F5, -14px 7px 0 #0a0e27;
+}
+
+
+.container{
+    display:flex;
+    min-width:800px;
+    justify-content: space-between;
+}
+
+
+.cardBtn {
+
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    width:200px;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    cursor:pointer;
+}
+
+
+.selectedCard {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+.infos {
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height:120px;
+ }
+
+.computer, .user {
+    padding:5px;
+    border-radius: 9px;
+    height:40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ }
+
+.result {
+    margin-top:10px;
+    padding:5px;
+    border-radius: 9px;
+    height:40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ }
+
+
+#pierre{
+  background-image: url('./imgs/rock.png')
+}
+
+#feuille{
+  background-image: url('./imgs/paper.png')
+}
+
+#ciseaux{
+  background-image: url('./imgs/scissor.png')
+}
